@@ -1,25 +1,29 @@
-# FILE NAME - convert_C_to_F_02.py
+# FILE NAME - convert_C_to_F_01.py
 
-# NAME: Dan Dettman
-# DATE: 3/5/2026
-# BRIEF DESCRIPTION:  This program converts a temperature in Celsius to Fahrenheit
-# using the formula F = C * 9/5 + 32.
+# NAME:Dan Dettman 
+# DATE: 3/16/26
+# BRIEF DESCRIPTION:This program converts a temperature
+# from Celsius to Fahrenheit.
 
-def convert_C_to_F(celsius):
-    fahrenheit = celsius * 9/5 + 32
-    print(fahrenheit)
+def convert_C_to_F():
+    celsius = float(input("Enter a temperature in Celsius: "))
+    
+    fahrenheit = celsius * 9 / 5 + 32
+    
+    print()
+    print(f"{celsius} degrees Celsius is {fahrenheit} degrees Fahrenheit.")
 
-
-# Example
-c = float(input("Enter temperature in Celsius: "))
-convert_C_to_F(c)
-
-
-
+convert_C_to_F()  
 
 
 
 
 
+#1. means a floating-point number that can contain decimals.
 
 
+
+
+
+#2. Why do you think it is important to use `float` as opposed to
+#a different type of variable type? because temperature values  are not always whole numbers.
